@@ -20,13 +20,12 @@ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0Ec
     <div class="container">
         <nav>
             <img src="logo.png" class="logo7">
-            
-            
-                <li><a href="#Header">Home</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#About">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
+            <div class="head">
+                <a href="#header"><i class="fa-solid fa-house-user fa-beat-fade">Home</i></a>
+                <a href="#Projects"><i class="fa-solid fa-diagram-project fa-beat-fade">Project</i></a>
+                <a href="#About"><i class="fa-regular fa-address-card fa-beat-fade">About</i></a>
+                <a href="#contact"><i class="fa-solid fa-address-book fa-beat-fade">Contact</i></a>
+            </div>
         </nav>
         <div class="header-text">
             <h1>Hello, I'm <span>Shan</span> Quimado</h1>
@@ -40,7 +39,6 @@ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0Ec
         <div class="row">
             <div class="About-col-1">
                 <img src="port.png" class="porti">
-                
             </div>
             <div class="About-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -55,18 +53,22 @@ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0Ec
                         <p>Video Editor</p>
                         <p>Technical</p>
                         <p>Can Make You Angry</p>
+                        <a class="Learns" href="https://drive.google.com/drive/folders/1Y977rn7369g3XN1fGjjJIc1Z3c8vr6bm?usp=sharing">Learn More</a>
                     </div>
                     <div>
                         <i class="fa-solid fa-flask fa-beat-fade"></i>
                         <h2>Experience</h2>
                         <p>JOINED Video Editing Clubs</p>
                         <p>JOINED Clubs that needs Technical</p>
+                        <a class="Learns" href="">Learn More</a>
                     </div>
                     <div>
                         <i class="fa-solid fa-heart-circle-check fa-beat-fade"></i>
                         <h2>Favorite</h2>
                         <p>PLAYING Electrical Components</p>
                         <p>ASSEMBLE and Disassemble Computer stuff</p>
+                        <p>WATCHING COSPLAY EVENT</p>
+                        <a class="Learns" href="">Learn More</a>
                     </div>
                 </div>
                 <img src="download.gif" class="Ads">
@@ -87,7 +89,7 @@ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0Ec
                         encounter full of fail and challenge but we overcome that and 
                         create our projects working.
                     </p>
-                    <a href="#"><i class="fa-solid fa-house-signal fa-beat"></i></a>
+                    <a href="#Projects"><i class="fa-solid fa-house-signal fa-beat"></i></a>
                 </div>
             </div>
             <div class="pro">
@@ -99,7 +101,7 @@ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0Ec
                         exhibit in Alaminos City National High School where the students STE 
                         in Alaminos display thier work. 
                     </p>
-                    <a href="#"><i class="fa-solid fa-tower-cell fa-beat"></i></a>
+                    <a href="#Projects"><i class="fa-solid fa-tower-cell fa-beat"></i></a>
                 </div>
             </div>
             <div class="pro">
@@ -111,7 +113,7 @@ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0Ec
                         Then after that our team implement the project in Architecture Department
                         in specific instructor.
                     </p>
-                    <a href="#"><i class="fa-brands fa-codepen fa-beat"></i></a>
+                    <a href="#Projects"><i class="fa-brands fa-codepen fa-beat"></i></a>
                 </div>
             </div>
             <div class="pro">
@@ -138,54 +140,12 @@ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0Ec
                     <a href="https://twitter.com/shantist19?t=pWhWY6jO-OgbQDGnzJeczQ&s=07"><i class="fa-brands fa-twitter-square fa-bounce"></i></a>
                     <a href="https://instagram.com/_shantist_?igshid=ZGUzMzM3NWJiOQ=="><i class="fa-brands fa-instagram fa-beat"></i></a>
                     <a href="https://www.tiktok.com/@hiroin12"><i class="fa-brands fa-tiktok fa-bounce"></i></a>
-                </div>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea></textarea> 
-                    <a href=""><button type="submit" class="btn btn2">Submit</button></a>
-                </form>
-                <span id="msg"></span>
-            </div>
+            
         </div>
+        
     </div>
     
 </div>
-
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.gotElementById(tabname).classList.add("active-tab");
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzTc5d1R-SKzfrXPk9XIUnwi5hg9BoC8JUFo0_5pfH7Ica8b0yjbvYmWON3g9bhU2op/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-</script>
-
 </body>
 </html>
