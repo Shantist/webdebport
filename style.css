@@ -8,7 +8,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background-color: #ace4ed;
+  background-color:#fefaf1;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(87,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFEF40'/%3E%3Cstop offset='1' stop-color='%23DD1DFF'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(115,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFE298'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='21.779999999999998'%3E%3Cpath transform='translate(-199.5 26) rotate(11 1409 581) scale(0.9845000000000002)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='7.26' transform='translate(-187.5 135) rotate(23 800 450) scale(1.0321500000000001)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(65.5 -247.5) rotate(212.5 401 736) scale(1.0321500000000001)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='6.6'%3E%3Cpath transform='translate(810 -19) rotate(4.75 150 345) scale(0.9315)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='14.52' transform='translate(-347.5 -355) rotate(234 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-614 186) rotate(39 1400 132) scale(0.825)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
@@ -34,25 +34,47 @@ a{
 }
 .container a{
   font-weight: bold;
-  color: white;
-  font-size: 20px;
+  color:#f79691;
+  font-size: 19px;
 }
 nav{
+  color: #e68cff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .logo7{
+  animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
   width: 120px;
+  display: inline-block;
+  padding: 20px;
+  color: #fff;
+  font-size: 18px;
+  animation: pulse 2s infinite
+  
   
 }
-nav ul li{
+nav a{
   display: inline-block;
   list-style-type: none;
   margin: 10px 25px;
 }
-nav ul li a{
+nav a{
   color:#e68cff;
   text-decoration: none;
   font-weight: bold;
@@ -60,12 +82,12 @@ nav ul li a{
   position: inherit;
 
 }
-nav ul li a:hover{
+nav a:hover{
   color: #ffe96a;
   transition: .4s;
 
 } 
-nav ul li a:hover::after{
+nav a:hover::after{
   width: 100%;
 }
 .header-text{
@@ -75,7 +97,7 @@ nav ul li a:hover::after{
 .header-text h1{
   font-size: 55px;
   margin-top: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
@@ -164,6 +186,14 @@ nav ul li a:hover::after{
 .Abt-list div p{
   font-size: 10px;
 }
+.Learns{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
 .Abt-list div:hover{
   background: rgba(229, 160, 160, 0.783);
   transform: translateY(-10px);
@@ -172,7 +202,7 @@ nav ul li a:hover::after{
 #Projects{
   width: 100%;
   padding: 10px 0px;
-  margin-top: -40%;
+  margin-top: -30%;
 }
 #cardGrid{
   display: grid;
@@ -259,7 +289,7 @@ nav ul li a:hover::after{
   height: 100%;
 }
 #contact{
-  margin-top: 15%;
+  margin-top: 10%;
 }
 .contact-left{
   background-image: url(Miku\ Anime\ GIF\ -\ Miku\ Anime\ Charging\ -\ Discover\ &\ Share\ GIFs.gif);
@@ -268,9 +298,6 @@ nav ul li a:hover::after{
 }
 .contact-left{  
   flex-basis: 35%;
-}
-.contact-right{
-  flex-basis: 60%;
 }
 .contact-left p{
   margin-top: 30px;
@@ -296,37 +323,3 @@ nav ul li a:hover::after{
   color: rgba(255, 128, 119, 0.858);
   transform: translateY(-5px);
 }
-.btn.btn2{
-  display: inline-block;
-  background-color: #e6cdd7;
-  color: #914ea2;
-  font-size: 20px;
-  outline-color: #000;
-}
-.contact-right form{
-  width: 100%;
-}
-form input, form textarea{
-  width: 100%;
-  border: 0;
-  outline: none;
-  background: #e6cdd7;
-  padding: 15px;
-  margin: 15px 0;
-  color: #914ea2;
-  font-size: 18px;
-  border-radius: 6px;
-}
-form .btn2{
-  padding: 14px 60px;
-  font-size: 18px;
-  margin-top: 3px;
-  cursor: pointer;
-}
-#msg{
-  color: #e4f582;
-  margin-top: 5px;
-  display: block;
-}
-
-
